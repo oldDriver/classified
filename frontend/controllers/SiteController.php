@@ -82,12 +82,13 @@ class SiteController extends Controller
         );
     }
 
-    public function actionCategory($id)
+    public function actionSection($id)
     {
         return $this->render(
             'category',
             [
-                'apiCategoryUrl' => Url::to(['/api/category/index', 'id' => $id])
+                'apiCategoryUrl' => Url::to(['/api/category/index', 'id' => $id]),
+                'categoryId' => $id
             ]
         );
         

@@ -10,10 +10,10 @@ use yii\helpers\Url;
 
 class CategoryController extends Controller
 {
-    public function actionIndex()
+    public function actionIndex($id)
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
-        $collection = Category::find()->all();
+        $collection = Category::find()->where(['section_id' => $id])->all();
         $response = [];
         foreach ($collection as $element) {
             $item = [];

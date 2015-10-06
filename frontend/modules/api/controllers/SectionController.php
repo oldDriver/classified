@@ -19,7 +19,7 @@ class SectionController extends Controller
             $item = [];
             $item['id'] = $section->id;
             $item['name'] = $section->name;
-            $item['href'] = Url::to(['/site/category', 'id' => $section->id], true);
+            $item['href'] = Url::to(['/site/section', 'id' => $section->id], true);
             $response[] = $item;
         }
         return $response;
