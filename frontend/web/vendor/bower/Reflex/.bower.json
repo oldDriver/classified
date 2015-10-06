@@ -1,0 +1,22 @@
+{
+  "name": "Reflex",
+  "version": "0.7.80",
+  "main": "dist/main.js",
+  "description": "Reflex clientside library",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "latest",
+    "jasmine-jquery": "2.1.0"
+  },
+  "homepage": "https://github.com/lu4/reflex",
+  "_release": "0.7.80",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.7.80",
+    "commit": "48ce02783578941adc8fa40d97db1e288d58ad0c"
+  },
+  "_source": "git://github.com/lu4/reflex.git",
+  "_target": "~0.7.80",
+  "_originalSource": "reflex",
+  "_direct": true
+}

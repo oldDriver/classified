@@ -12,6 +12,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\helpers\Url;
 
 /**
  * Site controller
@@ -72,7 +73,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        
+        return $this->render(
+            'index',
+            [
+                'apiSectionUrl' => Url::to(['/api/section/index'])
+            ]
+        );
+    }
+
+    public function actionCategory($id)
+    {
+        return $this->render(
+            'category',
+            [
+                'apiCategoryUrl' => Url::to(['/api/category/index', 'id' => $id])
+            ]
+        );
+        
     }
 
     /**

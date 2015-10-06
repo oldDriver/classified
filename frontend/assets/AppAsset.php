@@ -19,8 +19,11 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'vendor/bower/reflex-grid/docs/css/docs.css'
     ];
     public $js = [
+        'vendor/bower/react/JSXTransformer.js',
+        'vendor/bower/react/react.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

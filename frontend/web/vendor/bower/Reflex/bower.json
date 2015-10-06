@@ -1,0 +1,11 @@
+{
+    "name": "Reflex",
+    "version": "0.7.80",
+    "main": "dist/main.js",
+    "description": "Reflex clientside library",
+    "dependencies": { },
+    "devDependencies": {
+        "jquery": "latest",
+        "jasmine-jquery": "2.1.0"
+    }
+}
